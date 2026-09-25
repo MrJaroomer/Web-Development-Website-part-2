@@ -1,0 +1,96 @@
+/* Sets up fonts, spacing, and main text colors for the whole site */
+body { 
+    font-family: sans-serif; 
+    line-height: 1.6; 
+    margin: 20px; 
+    color: #333; 
+}
+
+/* Styles the top header block with primary navy blue color */
+header { 
+    background: #0D47A1; 
+    color: white; 
+    padding: 20px; 
+}
+
+/* Styles the navigation links inside the header with a gold color accent */
+header a { 
+    color: #FFD54F; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+/* Centers the main page columns on wide desktop monitors */
+main { 
+    padding: 20px 0; 
+    min-height: 400px; 
+    max-width: 960px; 
+    margin: 0 auto;  
+}
+
+/* Sets a clean separator border line and smaller text for the footer */
+footer { 
+    border-top: 1px solid #ccc; 
+    padding-top: 10px; 
+    font-size: 0.9rem; 
+}
+
+/* Stops page layout sections from pushing past screen boundaries */
+img, main, section, header, footer {
+    max-width: 100%;
+    box-sizing: border-box; 
+}
+
+/* Makes images flexible so they scale down on small screens */
+img {
+    max-width: 100%;
+}
+
+/* Adds a soft background card block color and borders to the enrolment form */
+form {
+    background: #fdfdfd;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+/* Standardizes spacing and width sizing for all online form input boxes */
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Designs the submit form button to match main branding theme */
+button {
+    background: #0D47A1; 
+    color: white; 
+    border: 1px solid #FFD54F; 
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Makes the submit button turn darker when hovered with a mouse cursor */
+button:hover {
+    background: #0a3981; 
+}
+
+/* Mobile responsive rules that automatically adjust layout structures on smartphones */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px; 
+    }
+    header {
+        text-align: center;
+    }
+    header a {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+}
